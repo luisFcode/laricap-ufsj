@@ -1,0 +1,309 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8.8rem;
+    display: flex;
+    z-index: 2021;
+    background-color: var(--black);
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            max-width: 100%;
+            width: 15rem;
+        }
+        nav{
+            display: flex;
+            align-items: center; 
+            .btn-primary{
+                padding: 0.9rem 3.4rem;
+                font-size: 1.5rem;
+            }  
+            ul {
+                display: flex;
+                margin-right: 3.2rem;
+                li {
+                    margin-left: 3.2rem;
+                    :first-child{
+                        margin-left: 0px;
+                    }
+                }
+            } 
+        }
+    }
+    .menu-mobile {
+        display: none;
+    }
+}
+
+.s-home{
+    width: 100%;
+    background-size: 1438px 728px;
+    background-position: center;
+    padding: 7.2rem 0px;
+    margin-top: 8.8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .imag1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        z-index: -1;
+        position: absolute;
+        filter: brightness(70%)
+        
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text {
+        width: 100%;
+        max-width: 64rem;
+        h1 {
+            margin-bottom: 2rem;
+            color: var(--white);
+        }
+        p {
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 5.6rem;
+            max-width: 488px;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: var(--white);
+        }
+        .btn-primary {
+            padding: 1.7rem 3.7rem;
+            font-size: 20px;
+        }
+    }
+    .image {
+        width: 100%;
+        max-width: 48.8rem;
+        height: 49.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 1200px) {
+        .text {
+            max-width: 49%;
+        }
+    }
+}
+
+.dicas-produtos{
+    background-color: var(--black);
+    padding-top: 10.4rem;
+    padding-bottom: 12rem;
+    .container {
+        .area-dicas {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            padding-bottom: 12.5rem;
+            .all-cards{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 4.8rem;
+                .card{
+                    width: 100%;
+                    max-width: 38.4rem;
+                    height: 38.2rem;
+                    background-color: var(--white);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 6.4rem;
+                    .icon {
+                        img {
+                            width: 100%;
+                            height: 100px;
+                        }
+                    }
+                    .info {
+                        margin-top: 4rem;
+                        max-width: 28.8rem;
+                        h3 {
+                            text-align: center;
+                            color: var(--orange);
+                        }
+                        p {
+                            text-align: center;
+                            margin-top: 0.8rem;
+                            line-height: 150%;
+                            color:var(--black);
+                            font-size: 1.6rem;
+                            opacity: 0.7;
+                            font-family: 'Inter', sans-serif;
+                        }
+                    }
+                }
+            }
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    color: var(--orange);
+                }
+                p {
+                    margin-top: 0.8rem;
+                }
+            }
+        }
+    }
+    .second-area {
+        margin-top: 11.2rem;
+        a {
+            font-size: 15px;
+        }
+        .all-imgs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3.2rem;
+            .img {
+                width: 17.6rem;
+                height: 11.2rem;
+                background-color: #363636;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6.4rem;
+            .title {
+                p {
+                    color: #FFFFFF;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    opacity: 70%;
+                }
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        .all-cards {
+            width: 100%;
+        }
+    }
+}
+
+.area-receitas{
+     padding: 15.2rem 0rem;
+     background-color: var(--white);
+     .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            width: 69.4rem;
+            color: var(--black);
+            text-align: center;
+            font-size: 40px;
+            line-height: 125%; /* 50px */
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            opacity: 0.7;
+            margin-bottom: 4.0rem;
+        }
+        .btn-primary {
+            display: flex;
+            padding: 20px 40px;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 20px;
+        }
+     }
+}
+
+footer {
+    background: var(--black);
+    padding-top: 8.8rem;
+    padding-bottom: 3.9rem;
+    main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 7.2rem;
+        .area-left {
+            max-width: 28.1rem;
+            p {
+                font-size: 2.5rem;
+                line-height: 150%;
+                color: rgba(255, 255, 255, 0.60);
+                margin-top: 3.5rem;
+            }
+        }
+        nav {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 50rem;
+            :last-child {
+                margin-right: 30px;
+            }
+            .item {
+                h6 {
+                    color: var(--white);
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    line-height: 125%; /* 20px */
+                    letter-spacing: -1px;
+                    margin-bottom: 2.4rem;
+                }
+                ul {
+                    li {
+                        margin-bottom: 3.2rem;
+                        :last-child p {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            font-family: 'Inter', sans-serif;
+                            font-size: 1.4rem;
+                            line-height: 105%;
+                            color: var(--white);
+                            transition: color .3s;
+                            :hover {
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+            .item :last-child {
+                    ul {
+                        li {
+                            a {
+                                display: flex;
+                                align-items: center;
+                                span {
+                                    margin-left: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

@@ -1,0 +1,225 @@
+@media (max-width: 1200px) {
+    .s-home .text {
+        max-width: 49%;
+    }
+
+    .dicas-produtos {
+        .all-cards {
+            width: 100%;
+            .card {
+                width: 32%;
+            }
+        }
+        .second-area {
+           .all-imgs {
+            gap: 2rem;
+           }
+        }
+    }
+
+    footer main nav{
+        max-width: 63rem;
+    }
+}
+
+@media (max-width: 991px) {
+   header {
+    .container {
+        nav {
+            display: none;
+        }
+        .menu-mobile {
+            display: block;
+            background-color: var(--orange);
+            font-family: 'Inter',sans-serif;
+        }
+    }
+   }
+   .s-home {
+    .container {
+        flex-direction: column;
+    }
+    .text {
+        max-width: 100%;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+   }
+   .dicas-produtos {
+    .container {
+        .area-dicas{
+            .all-cards{
+                flex-direction: column;
+                .card {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    padding: 3rem;
+                    margin-bottom: 2rem;
+                    .info {
+                        max-width: 100%;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+        .second-area {
+            .all-imgs {
+              padding-right: 10;
+            }
+        }
+    }
+   }
+   footer {
+    main {
+        nav {
+           max-width: 45rem;
+        }
+    }
+   }
+}
+
+@media (max-width: 768px) {
+    footer {
+        .container {
+            main {
+                .area-left {
+                    padding-bottom: 50px;
+                }
+            flex-direction: column;
+            align-items: center;
+            nav {
+                padding-left: 50px;
+            }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+
+    .dicas-produtos {
+        .container {
+            .second-area {
+                .top {
+                    flex-direction: column;
+                    align-items: center;
+                    .title {
+                        margin-bottom: 2rem;
+                        p {
+                            text-align: center;
+                        }
+                        h2 {
+                            text-align: center;
+                            margin-bottom: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .area-receitas {
+        .container {
+            h2 {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        .logo {
+            max-width: 13rem;
+        }
+    }
+    .s-home {
+        padding: 10rem 0px;
+        .container {
+            .text {
+                p {
+                    margin-bottom: 3rem;
+                }
+            }
+            .image {
+                img {
+                    height: 40rem;
+                    max-width: 100%;
+                }
+            }
+        }
+        h1 {
+            font-size: 4.2rem;
+        }
+    }
+    .dicas-produtos {
+        padding: 4rem 0px;
+        .container {
+            .title {
+                max-width: 100%;
+                h2 {
+                    font-size: 2.5rem;
+                }
+                p {
+                    text-align: center;
+                    max-width: 80%;
+                }
+            }
+            .area-dicas {
+                padding-bottom: 4rem;
+            }
+            .second-area {
+                margin-top: 4rem;
+                .top {
+                    margin: 0 auto;
+                    .title {
+                        text-align: center;
+                        p {
+                            padding-left: 60px;
+                        }
+                    }
+                }
+                .all-imgs {
+                    padding-top: 50px;
+                    
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+    .area-receitas {
+        padding: 4rem 0;
+    }
+    footer {
+        padding: 4rem 0;
+        .container {
+            main {
+                padding-bottom: 4rem;
+                nav {
+                    align-items: center;
+                    flex-direction: column;
+                    .item {
+                        align-items: center;
+                        flex-direction: column;
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

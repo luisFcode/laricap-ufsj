@@ -1,0 +1,54 @@
+h1,h2,h3 {
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -1px;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: #050110;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--orange);
+    padding: 1.2rem 3.4rem;
+    font-weight: 600;
+    letter-spacing: -0.01rem;
+    color: #050110;
+    transition: transform .3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 1.2rem 4rem;
+    font-size: 2rem;
+    line-height: 105%;
+    letter-spacing: -0.01rem;
+    color: var(--white);
+    transition: all .3s;
+}
+
+.menu-item:hover {
+    color: var(--orange);
+}
+
+.img-alimentos:hover {
+    transition: transform .3s;
+    transform: scale(1.05);
+}
+
+
